@@ -24,6 +24,7 @@ Route::get('/negocios/negocios_show/{id}', [NegocioController::class, 'show'])->
 Route::get('citas/cita_negocio/{id}',[CitaController::class, 'crearCita'])->name('citas.show');
 Route::post('citas/cita_create',[CitaController::class, 'finalizarCita'])->name('citas.store');
 Route::get('citas/cita_usuario/{id}',[CitaController::class,'citaUsuario'])->name('citas.usuario');
+Route::get('citas/cita_negocio_view/{id}',[CitaController::class, 'crearCita'])->name('citas.negocio.show');
 
 Route::get('/usuarios', [UsuarioController::class, 'index'])->name('usuarios.index');
 Route::get('/usuarios_create', [UsuarioController::class, 'create'])->name('usuarios.create');
